@@ -1,0 +1,53 @@
+.menu
+	white-space: nowrap
+	position: absolute
+	width: 100%
+	padding: 50px 0 10px
+	transition: background .2s
+	&_visible
+		top: 0 !important
+	&_scroll
+		position: fixed
+		padding-top: 0
+		background: #222222
+	ul
+		display: flex
+		justify-content: center
+	&__link
+		font-size: 30px
+		font-weight: 600
+		letter-spacing: 2px
+		padding: 5px 20px
+		margin: 0 30px
+		border: 5px solid rgba(255,255,255,0)
+		transition: border .2s
+		display: block
+		&:hover
+			border: 5px solid #ffffff
+
+
+.hamburger
+	display: none
+	position: fixed
+	top: 10px
+	left: 60px
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+	background-color: #fff
+.hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before
+	background-color: #fff
+
+@media (max-width: 992px)
+	.menu
+		position: fixed
+		padding: 75px 0 0 50px
+		height: 100vh
+		background: #222222
+		top: -100%
+		transition: top .2s
+		ul
+			flex-direction: column
+		&__link
+			display: inline-block
+			margin: 10px 0
+	.hamburger
+		display: block
