@@ -18,4 +18,120 @@ body {
   font-size: 16px;
   line-height: 1.75;
   min-width: 320px;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Roboto Condensed';
+  font-weight: 400;
+  color: #ffffff;
+  background: #666666; }
+
+.container {
+  max-width: 1200px;
+  padding: 15px 0;
+  margin: 0 auto;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  height: 100vh; }
+
+p {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25; }
+
+.h1 {
+  font-size: 125px;
+  letter-spacing: 32px; }
+  .h1__subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center; }
+
+.h2 {
+  font-size: 60px;
+  letter-spacing: 10px; }
+  .h2_black {
+    color: #222222; }
+  .h2__subtitle {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px; }
+
+.h3 {
+  font-size: 30px;
+  letter-spacing: 0;
+  font-weight: 400; }
+  .h3_bold {
+    font-weight: 600;
+    letter-spacing: 6px; }
+  .h3_low {
+    text-transform: none; }
+
+.h4 {
+  font-size: 24px;
+  letter-spacing: 6px; }
+
+.box {
+  border: 6px solid #ffffff;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase; }
+  .box_wrapper {
+    text-align: center; }
+  .box_main {
+    position: relative;
+    max-width: 510px;
+    padding: 75px 50px; }
+    .box_main__title {
+      font-size: 30px;
+      letter-spacing: 12px; }
+  .box_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    letter-spacing: 6px;
+    display: inline-block;
+    padding: 20px 125px; }
+    .box_page__title {
+      font-size: 30px; }
+    .box_page__subtitle {
+      font-size: 22px; }
+  .box_offer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50px 0;
+    position: relative; }
+    .box_offer__title {
+      font-size: 42px;
+      font-weight: 400;
+      letter-spacing: 4px; }
+    .box_offer__subtitle {
+      font-size: 24px;
+      letter-spacing: 4px; }
+  .box__btn {
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    width: 150px;
+    background: #ffffff; }
