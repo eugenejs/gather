@@ -149,6 +149,11 @@ h1, h2, h3, h4, h5, h6 {
     .box_page__subtitle {
       font-size: 22px;
       white-space: nowrap; }
+      .box_page__subtitle a {
+        -webkit-transition: color .3s;
+        transition: color .3s; }
+        .box_page__subtitle a:hover {
+          color: #a9a9a9; }
   .box_offer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -286,8 +291,12 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 15px; } }
 
 .header {
-  background: url(..//img/main-header.jpg) center;
+  background: url(..//img/main-header.jpg) center/cover;
   padding: 150px 0 50px; }
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 100px; } }
 
 .footer {
   background: #222222;
