@@ -7,13 +7,14 @@ h1, h2, h3, h4, h5, h6
 
 .h1
 	font-size: 125px
-	letter-spacing: 32px
-	&__subtitle
+	letter-spacing: 40px
+	&_subtitle
 		font-size: 16px
 		font-weight: 400
-		letter-spacing: 15px
+		letter-spacing: 20px
 		text-transform: uppercase
 		text-align: center
+
 
 .h2
 	font-size: 60px
@@ -39,3 +40,11 @@ h1, h2, h3, h4, h5, h6
 .h4
 	font-size: 24px
 	letter-spacing: 6px
+
+@media (max-width: 768px)
+	.h1
+		font-size: 60px
+		letter-spacing: 20px
+		&_subtitle
+			font-size: 15px
+			letter-spacing: 5px

@@ -17,13 +17,16 @@
 			letter-spacing: 12px
 	&_page
 		flex-direction: column
-		letter-spacing: 6px
+		letter-spacing: 8px
 		display: inline-block
-		padding: 20px 125px
+		padding: 15px 125px
+		line-height: 1.5
 		&__title
 			font-size: 30px
+			font-weight: 600
 		&__subtitle
 			font-size: 22px
+			white-space: nowrap
 	&_offer
 		flex-direction: column
 		padding: 50px 0
@@ -40,3 +43,15 @@
 		position: absolute
 		bottom: -25px
 		height: 50px
+
+@media (max-width: 768px)
+	.box
+		&_page
+			padding: 15px 0
+			width: 80%
+
+@media (max-width: 320px)
+	.box
+		&_page
+			&__subtitle
+				font-size: 16px

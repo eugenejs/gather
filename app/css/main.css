@@ -69,11 +69,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .h1 {
   font-size: 125px;
-  letter-spacing: 32px; }
-  .h1__subtitle {
+  letter-spacing: 40px; }
+  .h1_subtitle {
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 15px;
+    letter-spacing: 20px;
     text-transform: uppercase;
     text-align: center; }
 
@@ -103,6 +103,14 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   letter-spacing: 6px; }
 
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 60px;
+    letter-spacing: 20px; }
+    .h1_subtitle {
+      font-size: 15px;
+      letter-spacing: 5px; } }
+
 .box {
   border: 6px solid #ffffff;
   margin: 0 auto;
@@ -131,13 +139,16 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
     display: inline-block;
-    padding: 20px 125px; }
+    padding: 15px 125px;
+    line-height: 1.5; }
     .box_page__title {
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: 600; }
     .box_page__subtitle {
-      font-size: 22px; }
+      font-size: 22px;
+      white-space: nowrap; }
   .box_offer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -156,6 +167,15 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: -25px;
     height: 50px; }
+
+@media (max-width: 768px) {
+  .box_page {
+    padding: 15px 0;
+    width: 80%; } }
+
+@media (max-width: 320px) {
+  .box_page__subtitle {
+    font-size: 16px; } }
 
 .btn {
   font-family: "Roboto";
@@ -259,9 +279,15 @@ h1, h2, h3, h4, h5, h6 {
   .hamburger {
     display: block; } }
 
-header {
-  padding-top: 200px;
-  border: 1px solid; }
+@media (max-width: 320px) {
+  .hamburger {
+    left: 15px; }
+  .menu {
+    padding-left: 15px; } }
+
+.header {
+  background: url(..//img/main-header.jpg) center;
+  padding: 150px 0 50px; }
 
 .footer {
   background: #222222;
@@ -335,3 +361,8 @@ header {
     margin-bottom: 25px; }
     .footer__social a:not(:last-child) {
       margin-right: 25px; } }
+
+@media (max-width: 320px) {
+  .footer-logo__name {
+    font-size: 50px;
+    letter-spacing: 10px; } }
