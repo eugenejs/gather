@@ -300,6 +300,27 @@ h1, h2, h3, h4, h5, h6 {
   background: url(..//img/main-header.jpg) center/cover;
   padding: 150px 0 50px; }
 
+.home-header {
+  position: relative;
+  height: 100vh; }
+  .home-header__content {
+    position: absolute;
+    bottom: 125px;
+    width: 100%; }
+
+.slider {
+  width: 100%;
+  position: absolute;
+  z-index: -1; }
+  .slider__image {
+    height: 100vh; }
+    .slider__image_1 {
+      background: url(..//img/home-header-1.jpg) center/cover; }
+    .slider__image_2 {
+      background: url(..//img/main-header.jpg) center/cover; }
+    .slider__image_3 {
+      background: url(..//img/home-header-3.jpg) center/cover; }
+
 @media (max-width: 768px) {
   .header {
     padding-top: 100px; } }

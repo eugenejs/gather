@@ -20,6 +20,23 @@ $(document).ready(function() {
 
 	});
 
+
+	$('.slider').slick({
+		dots: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear',
+		arrows: false,
+		autoplay: true,
+  		autoplaySpeed: 5000,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		touchMove: false,
+		swipe: false
+	});
+
+
 });
 
 $(window).resize(function (){
