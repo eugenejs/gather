@@ -13,6 +13,13 @@ $(document).ready(function() {
 
 	});
 
+
+	$('.btn_scroll').click(function (){
+
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+
+	});
+
 });
 
 $(window).resize(function (){
@@ -28,4 +35,15 @@ $(window).scroll(function (){
 	}else{
 		$('.menu').removeClass('menu_scroll')
 	}
+
+	if($(this).scrollTop() >= $(window).height()){
+
+		$('.btn_scroll').addClass('btn_scroll_visible')
+
+	}else{
+
+		$('.btn_scroll').removeClass('btn_scroll_visible')
+
+	}
+
 });
