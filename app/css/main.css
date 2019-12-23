@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 10px; }
   .h2_black {
     color: #222222; }
-  .h2__subtitle {
+  .h2_subtitle {
     font-size: 28px;
     font-weight: 600;
     text-align: center;
@@ -402,3 +402,60 @@ h1, h2, h3, h4, h5, h6 {
   .footer-logo__name {
     font-size: 50px;
     letter-spacing: 10px; } }
+
+.products-wrapper {
+  background: url(..//img/field.jpg) center top/cover;
+  padding: 75px 0 0;
+  text-align: center; }
+  .products-wrapper p {
+    padding: 0 50px;
+    margin: 40px 0 50px; }
+
+.products {
+  margin-top: 60px; }
+  .products__item {
+    padding: 125px 0;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer; }
+    .products__item .h3 {
+      position: relative;
+      z-index: 1; }
+    .products__item:hover .products__shadow {
+      background: rgba(20, 20, 20, 0.8); }
+  .products__cereals {
+    background: url(..//img/350/cereals-2.jpg) center/cover; }
+  .products__vegetables {
+    background: url(..//img/350/vegetables.jpg) center/cover; }
+  .products__fruit {
+    background: url(..//img/350/raspberry.jpg) center/cover; }
+  .products__seed {
+    background: url(..//img/seed-370.jpg) center/cover; }
+  .products__shadow {
+    background: rgba(20, 20, 20, 0.35);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transition: background .3s;
+    transition: background .3s; }
+
+.products-nav {
+  text-align: center;
+  padding: 50px 0; }
+  .products-nav__button {
+    font-size: 26px;
+    background: 0;
+    border: 0;
+    color: #f9f9f9;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+    padding: 5px 15px; }
+    .products-nav__button:hover {
+      color: #999999; }
+  .products-nav__next {
+    margin-left: -4px; }
+
+.slick-slide {
+  outline: none; }

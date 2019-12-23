@@ -36,6 +36,32 @@ $(document).ready(function() {
 		swipe: false
 	});
 
+	$('.products').slick({
+		slidesToShow: 3,
+		dots: false,
+		infinite: true,
+		speed: 500,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		arrows: false,
+		arrows: true,
+		prevArrow: $('.products-nav__prev'),
+		nextArrow: $('.products-nav__next'),
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		]
+	});
 
 });
 
