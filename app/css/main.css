@@ -191,6 +191,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 480px) {
   .box {
     padding: 25px 0; }
+    .box_main {
+      margin: 25px 15px; }
+      .box_main__title {
+        font-size: 22px;
+        letter-spacing: 4px; }
     .box_offer__title {
       font-size: 28px;
       letter-spacing: 2px; }
@@ -322,15 +327,21 @@ h1, h2, h3, h4, h5, h6 {
 
 .home-header {
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .home-header__content {
-    position: absolute;
-    bottom: 125px;
+    margin-top: 100px;
     width: 100%; }
 
 .slider {
   width: 100%;
   position: absolute;
+  top: 0;
   z-index: -1; }
   .slider__image {
     height: 100vh; }
