@@ -1,0 +1,32 @@
+.team-wrapper
+	background: url(..//img/cereals.jpg) bottom center / cover
+.team
+	padding: 50px 0
+	&__h2
+		margin: 25px 0
+	&__content
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		width: 23%
+	&__title
+		text-align: left
+		margin: 10px 0
+	&__photo
+		width: 100%
+
+@media (max-width: 992px)
+	.team
+		&__content
+			justify-content: space-around
+		&__item
+				width: 40%
+				margin-bottom: 25px
+
+@media (max-width: 768px)
+	.team
+		&__content
+			justify-content: space-around
+		&__item
+				width: 60%

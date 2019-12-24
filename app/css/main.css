@@ -531,6 +531,12 @@ h1, h2, h3, h4, h5, h6 {
     background: url(..//img/640/greenhouse-640.jpg) center/cover; }
   .technologies-item_water {
     background: url(..//img/640/water-640.jpg) center/cover; }
+  .technologies-item_vegetables {
+    background: url(..//img/640/vegetables-640.jpg) center/cover; }
+  .technologies-item_cereals {
+    background: url(..//img/640/cereals-640.jpg) center/cover; }
+  .technologies-item_fruit {
+    background: url(..//img/640/fruit-640.jpg) center/cover; }
   .technologies-item__content {
     height: 100%;
     display: -webkit-box;
@@ -690,3 +696,142 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 568px) {
   .advantages-item {
     width: 100%; } }
+
+.about {
+  background: url(..//img/field.jpg) bottom/cover;
+  padding-top: 50px; }
+
+.about-entry {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0 75px; }
+  .about-entry__image {
+    background: url(..//img/field-420.jpg) top center/cover;
+    height: 360px;
+    min-width: 420px;
+    margin-right: 25px; }
+  .about-entry__text {
+    min-height: 360px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+
+.about-nature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0; }
+  .about-nature__item {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .about-nature__image {
+    min-width: 256px;
+    width: 256px;
+    height: 256px;
+    background: #000;
+    margin-right: 25px; }
+    .about-nature__image_pest {
+      background: url(..//img/pest.jpg) center/cover; }
+    .about-nature__image_water {
+      background: url(..//img/water.jpg) center/cover; }
+  .about-nature__title {
+    text-align: left; }
+  .about-nature__content {
+    position: relative;
+    padding-bottom: 50px; }
+  .about-nature__btn {
+    position: absolute;
+    bottom: 0; }
+
+@media (max-width: 992px) {
+  .about-entry {
+    display: block; }
+    .about-entry__image {
+      width: 420px;
+      margin: 0 auto 25px; }
+    .about-entry__text {
+      width: 420px;
+      margin: 0 auto; }
+  .about-nature__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .about-nature__content {
+    text-align: center;
+    margin-top: 25px;
+    padding: 0; }
+  .about-nature__title {
+    text-align: center; }
+  .about-nature__btn {
+    position: static; } }
+
+@media (max-width: 768px) {
+  .about-nature {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .about-nature__item {
+      width: 80%;
+      margin: 0 auto; } }
+
+@media (max-width: 480px) {
+  .about-entry__image {
+    min-width: auto;
+    width: 100%;
+    height: 275px; }
+  .about-entry__text {
+    width: 100%; } }
+
+.team-wrapper {
+  background: url(..//img/cereals.jpg) bottom center/cover; }
+
+.team {
+  padding: 50px 0; }
+  .team__h2 {
+    margin: 25px 0; }
+  .team__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .team__item {
+    width: 23%; }
+  .team__title {
+    text-align: left;
+    margin: 10px 0; }
+  .team__photo {
+    width: 100%; }
+
+@media (max-width: 992px) {
+  .team__content {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .team__item {
+    width: 40%;
+    margin-bottom: 25px; } }
+
+@media (max-width: 768px) {
+  .team__content {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .team__item {
+    width: 60%; } }
