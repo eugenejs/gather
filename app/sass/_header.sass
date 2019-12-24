@@ -5,6 +5,7 @@
 .home-header
 	position: relative
 	height: 100vh
+	min-height: 750px
 	display: flex
 	align-items: center
 	&__content
@@ -16,8 +17,8 @@
 	position: absolute
 	top: 0
 	z-index: -1
+	height: 100%
 	&__image
-		height: 100vh
 		&_1
 			background: url(..//img/home-header-1.jpg) center / cover
 		&_2
@@ -25,6 +26,11 @@
 		&_3
 			background: url(..//img/home-header-3.jpg) center / cover
 
+.slick-list, .slick-track, .slick-slide, .slick-slide > div, .slider__image
+	height: 100%
+
 @media (max-width: 768px)
-	.header
-		padding-top: 100px
+	.home-header
+		height: auto
+		min-height: auto
+		padding-bottom: 50px

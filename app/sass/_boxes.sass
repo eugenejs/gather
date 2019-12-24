@@ -50,24 +50,36 @@
 
 @media (max-width: 768px)
 	.box
+		&_main
+			padding: 25px 0
+			width: 450px
+			max-width: 90%
+			&__title
+				font-size: 22px
+				letter-spacing: 6px
 		&_page
 			padding: 15px 0
 			width: 80%
+		&_offer
+			&__title
+				font-size: 32px
+			&__subtitle
+				font-size: 22px
 
 @media (max-width: 480px)
 	.box
-		padding: 25px 0
+		padding: 30px 5px
+		box-sizing: border-box
 		&_main
-			margin: 25px 15px
 			&__title
-				font-size: 22px
+				font-size: 18px
 				letter-spacing: 4px
 		&_offer
 			&__title
-				font-size: 28px
+				font-size: 24px
 				letter-spacing: 2px
 			&__subtitle
-				font-size: 16px
+				font-size: 14px
 				letter-spacing: 2px
 
 @media (max-width: 320px)

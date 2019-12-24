@@ -7,6 +7,7 @@
 	z-index: 100
 	&_visible
 		top: 0 !important
+		bottom: 0 !important
 	&_scroll
 		position: fixed
 		padding-top: 0
@@ -41,10 +42,11 @@
 	.menu
 		position: fixed
 		padding: 75px 0 0 50px
-		height: 100vh
-		background: #222222
 		top: -100%
-		transition: top .2s
+		bottom: 100%
+		background: #222222
+		overflow: hidden
+		transition: .2s
 		ul
 			flex-direction: column
 		&__link
