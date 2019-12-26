@@ -40,9 +40,11 @@ p {
   font-weight: 300; }
 
 button {
-  outline: none;
   cursor: pointer;
   color: inherit; }
+
+button, input, textarea {
+  outline: none; }
 
 ul {
   padding: 0;
@@ -54,6 +56,9 @@ li {
 a {
   text-decoration: none;
   color: inherit; }
+
+textarea {
+  resize: none; }
 
 .container {
   max-width: 1200px;
@@ -936,3 +941,68 @@ h1, h2, h3, h4, h5, h6 {
       transition: .3s; }
     .gallery-item__title {
       margin-top: 25px; }
+
+.contacts {
+  padding: 100px 0 50px;
+  background: url(..//img/field-2.jpg) center top/cover; }
+  .contacts__h2 {
+    margin: 0 0 75px; }
+  .contacts__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px; }
+  .contacts input, .contacts textarea {
+    background: #ECECEC;
+    border: 0;
+    padding: 15px 20px;
+    font-size: 14px;
+    color: #222222;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .contacts textarea {
+    grid-column: 1 / -1;
+    width: 100%; }
+  .contacts__btn {
+    grid-column: 1 / -1;
+    margin: 0 auto; }
+  .contacts a {
+    -webkit-transition: color, .5s;
+    transition: color, .5s;
+    cursor: pointer; }
+    .contacts a:hover {
+      color: #666666; }
+
+.contacts-info {
+  color: #222222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 100px; }
+  .contacts-info__item {
+    width: 30%;
+    text-align: center; }
+  .contacts-info__icon {
+    font-size: 36px; }
+  .contacts-info__title {
+    margin: 10px 0; }
+
+@media (max-width: 992px) {
+  .contacts__form {
+    grid-template-columns: 1fr; }
+  .contacts input, .contacts textarea {
+    width: 60%;
+    min-width: 320px;
+    margin: 0 auto; }
+  .contacts-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .contacts-info__item {
+      margin: 0 auto;
+      min-width: 320px; }
+      .contacts-info__item:not(:last-child) {
+        margin-bottom: 25px; } }
