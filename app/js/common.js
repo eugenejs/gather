@@ -60,10 +60,10 @@ $(document).ready(function() {
 		]
 	});
 
-
-	var mixer = mixitup('.gallery__content');
-
 });
+
+var mixer = mixitup('.gallery__content');
+
 
 $(window).resize(function (){
 
