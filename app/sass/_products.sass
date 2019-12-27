@@ -5,6 +5,7 @@
 	p
 		padding: 0 50px
 		margin: 40px 0 50px
+
 .products
 	margin-top: 60px
 	&__item
@@ -12,11 +13,11 @@
 		margin: 0 20px
 		position: relative
 		cursor: pointer
+		&:hover .products__shadow
+			background: rgba(20,20,20,.8)
 		.h3
 			position: relative
 			z-index: 1
-		&:hover .products__shadow
-			background: rgba(20,20,20,.8)
 	&__cereals
 		background: url(..//img/350/cereals-2.jpg) center / cover
 	&__vegetables
@@ -55,5 +56,5 @@
 @media (max-width: 480px)
 	.products-wrapper
 		p
-			padding: 0 0px
+			padding: 0
 			margin: 20px 0 30px
