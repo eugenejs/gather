@@ -23,6 +23,59 @@
   src: url(..//fonts/Roboto-Medium.woff2);
   font-weight: 500; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("..//fonts/icomoon.woff?id5h44") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block; }
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-thermometer:before {
+  content: "\e903"; }
+
+.icon-home:before {
+  content: "\e900"; }
+
+.icon-phone:before {
+  content: "\e942"; }
+
+.icon-leaf:before {
+  content: "\e9a4"; }
+
+.icon-sun:before {
+  content: "\e9d4"; }
+
+.icon-google-plus:before {
+  content: "\ea8b"; }
+
+.icon-facebook:before {
+  content: "\ea90"; }
+
+.icon-twitter:before {
+  content: "\ea96"; }
+
+.icon-linkedin:before {
+  content: "\eaca"; }
+
+.icon-envelope:before {
+  content: "\e904"; }
+
+.icon-briefcase:before {
+  content: "\e902"; }
+
+.icon-arrow-up:before {
+  content: "\e901"; }
+
 body {
   position: relative;
   font-size: 16px;
@@ -275,7 +328,9 @@ h1, h2, h3, h4, h5, h6 {
     position: fixed;
     bottom: -100px;
     right: 25px;
-    z-index: 10; }
+    z-index: 10;
+    font-size: 18px;
+    color: #222222; }
     .btn_scroll_visible {
       bottom: 25px; }
 
@@ -380,12 +435,11 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   z-index: -1;
   height: 100%; }
-  .slider__image_1 {
-    background: url(..//img/home-header-1.jpg) center/cover; }
-  .slider__image_2 {
-    background: url(..//img/main-header.jpg) center/cover; }
-  .slider__image_3 {
-    background: url(..//img/home-header-3.jpg) center/cover; }
+  .slider__image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 @media (max-width: 768px) {
   .home-header {
@@ -433,10 +487,14 @@ h1, h2, h3, h4, h5, h6 {
     user-select: none; }
     .footer__social a:not(:last-child) {
       margin-right: 10px; }
-    .footer__social .facebook {
+    .footer__social .icon-facebook {
       position: relative;
-      font-size: 26px;
+      font-size: 24px;
       top: -3px; }
+    .footer__social .icon-google-plus {
+      position: relative;
+      font-size: 30px;
+      top: 3px; }
   .footer a:not(.footer-logo__name) {
     -webkit-transition: color .3s;
     transition: color .3s; }
