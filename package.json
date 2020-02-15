@@ -4,12 +4,11 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "normalize.css": "latest",
-    "jquery": "latest",
-    "@fortawesome/fontawesome-free": "latest",
     "hamburgers": "latest",
-    "slick-slider": "latest",
-    "mixitup": "latest"
+    "jquery": "latest",
+    "mixitup": "latest",
+    "normalize.css": "latest",
+    "slick-slider": "latest"
   },
   "devDependencies": {
     "browser-sync": "latest",
@@ -20,6 +19,7 @@
     "gulp-npm-dist": "^1.0.3",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "latest",
+    "gulp-pug": "^4.0.1",
     "gulp-sourcemaps": "latest",
     "gulp-uglifyjs": "latest",
     "gulp-imagemin": "^6.2.0",
