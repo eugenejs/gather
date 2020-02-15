@@ -4,7 +4,6 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "hamburgers": "latest",
     "jquery": "latest",
     "mixitup": "latest",
     "normalize.css": "latest",

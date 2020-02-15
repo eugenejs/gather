@@ -1,0 +1,14 @@
+include /base/mixins
+doctype html
+html(lang='ru')
+	include /modules/base
+	body
+		include /modules/menu
+		include /modules/hamburger
+		include /modules/scroll-button
+
+		+header('Контакты')
+		include /modules/contacts/contacts
+
+		include /modules/footer
+		include /base/scripts

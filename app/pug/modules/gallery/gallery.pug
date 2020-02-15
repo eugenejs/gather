@@ -1,0 +1,26 @@
+mixin gallery_item(image,class_name,name,text)
+	.gallery-item.mix(class=image class=class_name )
+		.gallery-item__desc
+			h3.h3.gallery-item__title=name
+			p.gallery-item__text=text
+
+section.gallery
+	.container
+		.gallery__btns
+			button.btn.btn_standart.gallery__btn(data-filter="all") Все
+			button.btn.btn_standart.gallery__btn(data-filter=".cereals") Злаки
+			button.btn.btn_standart.gallery__btn(data-filter=".vegetables") Овощи
+			button.btn.btn_standart.gallery__btn(data-filter=".fruit") Фрукты
+		.gallery__content
+			+gallery_item('gallery-item_pineapples','fruit','Ананас','Ананас настоящий представлен в культуре многочисленным разнообразием сортов не только в Южной Америке, где растут представители рода Ананас.')
+			+gallery_item('gallery-item_cereals','cereals','Ячмень','Зерно ячменя широко используют для продовольственных, технических и кормовых целей, в том числе в пивоваренной промышленности.')
+			+gallery_item('gallery-item_mandarins','fruit','Мандарин','Небольшое вечнозелёное дерево, вид рода Цитрус (Citrus) семейства Рутовые (Rutaceae) это же слово обозначает плод этого растения.')
+			+gallery_item('gallery-item_cereals-2','cereals','Пшено','Крупа, получаемая из плодов культурных видов проса (Panicum), освобождённых от колосковых чешуек посредством обдирки.')
+			+gallery_item('gallery-item_pepper','vegetables','Перец','Пе́рец — название ряда различных растений, а также распространённых пряностей, получаемых из их плодов. Также фамилия.')
+			+gallery_item('gallery-item_raspberry','fruit','Малина','Полукустарник вид рода Рубус семейства Розовые (Rosaceae). Растёт по вырубкам, лесам, кустарникам, берегам рек. Часто разводится в садах.')
+			+gallery_item('gallery-item_vegetables','vegetables','Овощи','Овощи являются важной частью рациона человека. Источником овощей в подавляющем большинстве случаев служат овощные культуры.')
+			+gallery_item('gallery-item_strawberry','fruit','Клубника','Название растений и их плодов (ягод, многоорешков) некоторых видов рода Земляника.')
+			+gallery_item('gallery-item_carrot','vegetables','Морковь','Двулетнее растение, овощная культура, подвид вида морковь дикая.')
+			+gallery_item('gallery-item_blueberry','fruit','Голубика','Вид листопадных кустарников из рода Вакциниум семейства Вересковые. Типовой вид этого рода.')
+			.gallery-item.gallery-item_hidden.mix.fruit.cereals.vegetables
+			.gallery-item.gallery-item_hidden.mix.fruit.cereals.vegetables

@@ -73,7 +73,6 @@ const pngquant = require('imagemin-pngquant')
 
       var csslibs = [
           'app/libs/normalize.css/normalize.css',
-          'app/libs/hamburgers/dist/hamburgers.min.css',
           'app/libs/slick-slider/slick/slick.css',
           'app/libs/slick-slider/slick/slick-theme.css',
 
@@ -113,21 +112,6 @@ const pngquant = require('imagemin-pngquant')
           .pipe(uglify())
           .pipe(gulp.dest('app/js'))
       })
-
-    // fontawesome
-
-        gulp.task('fafont', function() {
-            return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/*.+(eot|ttf|woff|woff2)')
-                .pipe(gulp.dest('app/fonts/fontawesome/webfonts'))
-        });
-
-        gulp.task('facss', function() {
-            return gulp.src('node_modules/@fortawesome/fontawesome-free/css/all.min.css')
-                .pipe(gulp.dest('app/fonts/fontawesome/css'))
-        });
-
-        gulp.task('fontawesome', gulp.parallel('fafont','facss'));
-
 
 
   // build

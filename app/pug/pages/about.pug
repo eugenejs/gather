@@ -1,0 +1,16 @@
+include /base/mixins
+doctype html
+html(lang='ru')
+	include /modules/base
+	body
+		include /modules/menu
+		include /modules/hamburger
+		include /modules/scroll-button
+
+		+header('О нас')
+		include /modules/about/about
+		include /modules/about/technologies
+		include /modules/about/team
+
+		include /modules/footer
+		include /base/scripts

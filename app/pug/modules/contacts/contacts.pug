@@ -1,0 +1,29 @@
+section.contacts
+	.container
+		h2.h2.h2_black.contacts__h2 Контактная информация
+		.contacts-info
+			.contacts-info__item
+				.contacts-info__icon
+					i.icon-home
+				h3.h3.h3_low.contacts-info__title Адрес:
+				a.contacts-info__text Шелепихинская наб., 7с5, Москва, Россия, 123290
+
+			.contacts-info__item
+				.contacts-info__icon
+					i.icon-phone
+				h3.h3.h3_low.contacts-info__title Телефон:
+				a.contacts-info__text(href="tel:+") 8-800-555-35-35
+
+			.contacts-info__item
+				.contacts-info__icon
+					i.icon-mail
+				h3.h3.h3_low.contacts-info__title Email:
+				a.contacts-info__text(href='mailto:@') mail@mail.com
+
+		h2.h2.h2_black.contacts__h2 Связаться с нами
+		form.contacts__form
+			input(type="text" placeholder="Имя:" required)
+			input(type="email" placeholder="E-mail:" required)
+			input(type="tel" placeholder="Телефон:" required)
+			textarea(rows="15" placeholder="Сообщение" required)
+			button.btn.btn_black.btn_hover-border-black.contacts__btn Отправить

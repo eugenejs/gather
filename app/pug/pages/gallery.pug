@@ -1,0 +1,14 @@
+include /base/mixins
+doctype html
+html(lang='ru')
+	include /modules/base
+	body
+		include /modules/menu
+		include /modules/hamburger
+		include /modules/scroll-button
+
+		+header('Галерея')
+		include /modules/gallery/gallery
+
+		include /modules/footer
+		include /base/scripts
